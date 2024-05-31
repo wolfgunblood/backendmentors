@@ -10,7 +10,7 @@ require('dotenv').config()
 app.use(express.json())
 
 //routes
-app.use("/api/v1/login",router)
+app.use("/api/v1",router)
 
 app.use(notFound)
 app.use(errorHandleMiddleware)
