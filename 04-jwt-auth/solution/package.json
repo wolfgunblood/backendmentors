@@ -1,0 +1,33 @@
+{
+  "name": "jwt-auth",
+  "version": "1.0.0",
+  "description": "jwt authorization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfgunblood/backendmentors.git"
+  },
+  "keywords": [
+    "jwt",
+    "authorization"
+  ],
+  "author": "wolfgunblood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolfgunblood/backendmentors/issues"
+  },
+  "homepage": "https://github.com/wolfgunblood/backendmentors#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}

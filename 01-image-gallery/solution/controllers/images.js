@@ -5,7 +5,7 @@ const getImages = asyncWrapper(async (req, res) => {
     // console.log("hi")
   const { query } = await req.body; // Extract the query from the request body
 //   console.log(query)
-
+  
   if (!query) {
     console.log("Error: query is required");
     return res.status(403).send("Query required");
