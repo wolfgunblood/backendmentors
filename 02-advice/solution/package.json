@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/wolfgunblood/backendmentors#readme",
   "devDependencies": {
-    "nodeman": "^1.1.2"
   },
   "dependencies": {
     "axios": "^1.7.2",

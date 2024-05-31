@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 
 const {
-    getImages
-} = require("../controllers/images")
+    getAdvice
+} = require('../controllers/advice')
 
-router.route('/').post(getImages)
+router.route('/').get(getAdvice)
 
 module.exports = router
