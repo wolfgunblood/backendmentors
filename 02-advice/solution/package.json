@@ -21,11 +21,12 @@
     "url": "https://github.com/wolfgunblood/backendmentors/issues"
   },
   "homepage": "https://github.com/wolfgunblood/backendmentors#readme",
-  "devDependencies": {
-  },
   "dependencies": {
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
   }
 }

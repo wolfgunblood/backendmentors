@@ -26,7 +26,7 @@ const getImages = asyncWrapper(async (req, res) => {
   }));
 
   // Send back the array of images as a JSON response
-  return res.json(images);
+  return res.status(200).json(images);
 });
 
 module.exports = { getImages };
