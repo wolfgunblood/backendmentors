@@ -1,9 +1,12 @@
 const express = require("express")
 const app = express()
 require('dotenv').config()
-const images = require('./controllers/images')
+const images = require('./routes/images')
 const notFound = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/error-handler')
+
+//middleware
+app.use(express.json()); 
 
 //routes
 

@@ -5,6 +5,8 @@ const {
     getImages
 } = require("../controllers/images")
 
-router.route('/').get(getImages)
+// console.log("hi1")
+router.route('/').post(getImages)
+// console.log("hi2")
 
 module.exports = router
