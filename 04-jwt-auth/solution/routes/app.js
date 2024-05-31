@@ -5,6 +5,6 @@ const {
     login
 } = require('../controllers/app')
 
-router.route('/').get(login)
+router.route('/').post(login)
 
 module.exports = router
