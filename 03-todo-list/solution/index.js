@@ -17,7 +17,7 @@ app.use("/api/v1",router)
 app.use(notFound)
 app.use(errorHandleMiddleware)
 
-const start = async () => {
+const main = async () => {
     try {
         // console.log(process.env.MONGO_URI)
         await connectDB(process.env.MONGO_URI)
@@ -30,4 +30,4 @@ const start = async () => {
     }
 }
 
-start()
+main()
