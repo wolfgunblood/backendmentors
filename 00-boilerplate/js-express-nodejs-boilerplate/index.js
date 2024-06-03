@@ -2,6 +2,7 @@
 const express = require("express"); // Express framework for handling server operations
 const router = require("./routes/app"); // Import the router for handling specific routes
 const notFound = require("./middleware/not-found"); // Middleware to handle 404 Not Found errors
+const errorHandleMiddleware = require("./middleware/error-handler");
 require('dotenv').config(); // Load environment variables from .env file into process.env
 
 const app = express(); // Create an Express application
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use('/api/v1', router);
 // Use the notFound middleware for handling requests to undefined routes
 app.use(notFound);
+app.use(errorHandleMiddleware)
 
 // Start the server on the specified PORT and log the listening port
 app.listen(PORT, () => {
